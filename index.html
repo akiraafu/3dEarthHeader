@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Material Design for Bootstrap</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+        <!-- Google Fonts Roboto -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        />
+        <!-- MDB -->
+        <link rel="stylesheet" href="css/mdb.min.css" />
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                />
+                <meta http-equiv="x-ua-compatible" content="ie=edge" />
+                <title>Material Design for Bootstrap</title>
+                <!-- MDB icon -->
+                <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+                <!-- Font Awesome -->
+                <link
+                    rel="stylesheet"
+                    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+                />
+                <!-- Google Fonts Roboto -->
+                <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+                />
+                <!-- MDB -->
+                <link
+                    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+                    rel="stylesheet"
+                />
+
+                <style>
+                    body {
+                        background-color: hsl(0, 0%, 95%);
+                        overflow-x: hidden;
+                    }
+                    .webgl {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        outline: none;
+                        mix-blend-mode: exclusion;
+                        z-index: -99;
+                    }
+                    .text-theme {
+                        color: hsl(35, 38.2%, 22.4%);
+                    }
+                    .bg-theme-light {
+                        background-color: hsl(35, 37.5%, 95.2%);
+                    }
+                    .bg-theme-dark {
+                        background-color: hsl(35, 38.2%, 22.4%) !important;
+                    }
+                    .navbar-light {
+                        color: hsl(35, 38.2%, 22.4%);
+                    }
+                    .navbar-light .nav-item .nav-link {
+                        color: hsl(35, 38.2%, 22.4%);
+                    }
+
+                    .gradient-theme {
+                        background: -webkit-linear-gradient(
+                            310deg,
+                            hsl(35, 38.2%, 22.4%),
+                            hsl(35, 38.2%, 52.4%)
+                        );
+                        background: linear-gradient(
+                            310deg,
+                            hsl(35, 38.2%, 22.4%),
+                            hsl(35, 38.2%, 52.4%)
+                        );
+                    }
+                </style>
+            </head>
+
+            <header>
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-theme-light shadow-1 fixed-top">
+                    <!-- Container wrapper -->
+                    <div class="container-fluid">
+                        <!-- Toggle button -->
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-mdb-toggle="collapse"
+                            data-mdb-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <!-- Collapsible wrapper -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- Navbar brand -->
+                            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                                <i class="fas fa-globe text-theme"></i>
+                            </a>
+                            <!-- Left links -->
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Projects</a>
+                                </li>
+                            </ul>
+                            <!-- Left links -->
+                        </div>
+                        <!-- Collapsible wrapper -->
+
+                        <!-- Right elements -->
+                        <div class="d-flex align-items-center">
+                            <!-- Icon -->
+                            <a class="text-reset me-3" href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+
+                            <!-- Notifications -->
+                            <div class="dropdown">
+                                <a
+                                    class="text-reset me-3 dropdown-toggle hidden-arrow"
+                                    href="#"
+                                    id="navbarDropdownMenuLink"
+                                    role="button"
+                                    data-mdb-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <i class="fas fa-bell"></i>
+                                </a>
+                                <ul
+                                    class="dropdown-menu dropdown-menu-end"
+                                    aria-labelledby="navbarDropdownMenuLink"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#">Some news</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Another news</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Avatar -->
+                            <div class="dropdown">
+                                <a
+                                    class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                                    href="#"
+                                    id="navbarDropdownMenuAvatar"
+                                    role="button"
+                                    data-mdb-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <img
+                                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                        class="rounded-circle"
+                                        height="25"
+                                        alt="Black and White Portrait of a Man"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <ul
+                                    class="dropdown-menu dropdown-menu-end"
+                                    aria-labelledby="navbarDropdownMenuAvatar"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#">My profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Right elements -->
+                    </div>
+                    <!-- Container wrapper -->
+                </nav>
+                <!-- Navbar -->
+            </header>
+
+            <main>
+                <div class="container">
+                    <section>
+                        <div class="vh-100 d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <h1 class="display-1 text-uppercase fw-bold text-theme mb-4">
+                                    Act Local, think global
+                                </h1>
+                                <a
+                                    href="#section-content"
+                                    role="button"
+                                    class="btn btn-dark bg-theme-dark btn-lg px-5 py-3"
+                                >
+                                    Button
+                                </a>
+                            </div>
+                        </div>
+                        <canvas class="webgl"></canvas>
+                    </section>
+                    <section id="section-content" class="">
+                        <!-- Section: Design Block -->
+                        <section
+                            class="mb-md-12 mb-8"
+                            data-mdb-toggle="animation"
+                            data-mdb-animation="fade-in"
+                            data-mdb-animation-start="onScroll"
+                            data-mdb-animation-duration="2000"
+                        >
+                            <div class="gradient-theme text-white rounded-6 py-5">
+                                <div class="row justify-content-center text-center mt-5">
+                                    <div class="col-md-3 mb-5">
+                                        <h2 class="fs-1 mb-3" style="font-weight: 900">435</h2>
+                                        <h5 class="pb-1">Projects</h5>
+                                        <p class="opacity-80">
+                                            At vero eos et accusamus et iusto odio dignissimos
+                                            ducimus
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 mb-5">
+                                        <h2 class="fs-1 mb-3" style="font-weight: 900">600+</h2>
+                                        <h5 class="pb-1">Hours</h5>
+                                        <p class="opacity-80">
+                                            Blanditiis praesentium voluptatum deleniti atque
+                                            corrupti
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 mb-5">
+                                        <h2 class="fs-1 mb-3" style="font-weight: 900">24/7</h2>
+                                        <h5 class="pb-1">Support</h5>
+                                        <p class="opacity-80">
+                                            Quos dolores et quas molestias excepturi sint occaecati
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Section: Pricing -->
+                        <section
+                            class="mb-md-12 mb-8"
+                            data-mdb-toggle="animation"
+                            data-mdb-animation="fade-in"
+                            data-mdb-animation-start="onScroll"
+                            data-mdb-animation-duration="2000"
+                        >
+                            <div class="row gx-lg-5 align-items-center">
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <h2 class="fw-bold pb-1">
+                                        Choose the pricing plan that best suits you
+                                    </h2>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Iste sit laboriosam est eveniet? Nesciunt, iusto. Minima,
+                                        totam consectetur nam maxime hic perspiciatis officiis
+                                        necessitatibus saepe quibusdam distinctio eveniet ab quia?
+                                    </p>
+                                </div>
+
+                                <div class="col-md-8 mb-4 mb-md-0">
+                                    <div class="row gx-lg-5">
+                                        <div class="col-md-6 mb-4 mb-md-0">
+                                            <div class="card text-center">
+                                                <div class="card-header py-4 border-0">
+                                                    <h6 class="text-uppercase mt-3 mb-4">
+                                                        standard
+                                                    </h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h2 class="fs-7xl mb-0"><small>$</small>35</h2>
+                                                    <p class="mb-4">per month</p>
+                                                    <div>
+                                                        <p class="mb-1">
+                                                            <span class="font-weight-bold"
+                                                                >30GB</span
+                                                            >
+                                                            Cloud Space
+                                                        </p>
+                                                        <p class="mb-1">
+                                                            <span class="font-weight-bold">20</span>
+                                                            Team Members
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="font-weight-bold">5</span>
+                                                            Emails
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer py-4 border-0">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-primary bg-theme-dark btn-lg mt-4 mb-3"
+                                                        data-mdb-ripple-color="dark"
+                                                    >
+                                                        Request a demo
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-4 mb-md-0">
+                                            <div class="card text-center text-white gradient-theme">
+                                                <div class="card-header py-4 border-0">
+                                                    <h6 class="text-uppercase mt-3 mb-4">
+                                                        premium
+                                                    </h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h2 class="fs-7xl mb-0"><small>$</small>79</h2>
+                                                    <p class="mb-4">per month</p>
+                                                    <div>
+                                                        <p class="mb-1">
+                                                            <span class="font-weight-bold"
+                                                                >60GB</span
+                                                            >
+                                                            Cloud Space
+                                                        </p>
+                                                        <p class="mb-1">
+                                                            <span class="font-weight-bold"
+                                                                >150</span
+                                                            >
+                                                            Team Members
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="font-weight-bold">30</span>
+                                                            Emails
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer py-4 border-0">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-outline-white btn-lg mt-4 mb-3"
+                                                        data-mdb-ripple-color="dark"
+                                                    >
+                                                        Request a demo
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Section: Pricing -->
+
+                        <!-- Section: Design Block -->
+                        <section
+                            class="mb-12"
+                            data-mdb-toggle="animation"
+                            data-mdb-animation="fade-in"
+                            data-mdb-animation-start="onScroll"
+                            data-mdb-animation-duration="2000"
+                        >
+                            <div class="gradient-theme text-white rounded-6 py-5">
+                                <div class="row d-flex justify-content-center text-center mt-5">
+                                    <div class="col-12">
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-dark bg-white rounded-circle mb-4 mx-auto"
+                                            style="width: 50px; height: 50px"
+                                        >
+                                            <i class="fas fa-envelope text-theme"></i>
+                                        </div>
+                                        <h2 class="fs-1 pt-2 mb-3" style="font-weight: 900">
+                                            Subscribe
+                                        </h2>
+                                        <p
+                                            class="lead fw-normal opacity-80 mb-5 mx-auto"
+                                            style="max-width: 400px"
+                                        >
+                                            Dolore rem quasi, incidunt vel aperiam magnam qui
+                                            delectus nulla esse.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-center text-center mb-5">
+                                    <div class="col-md-10 col-lg-7 col-xl-6">
+                                        <div class="d-md-flex mb-3 mb-md-2 ms-xl-4">
+                                            <div
+                                                class="form-outline flex-fill me-md-1 mb-3 mb-md-0 form-white"
+                                            >
+                                                <input
+                                                    type="email"
+                                                    id="formControlEmail0"
+                                                    class="form-control form-control-lg"
+                                                />
+                                                <label class="form-label" for="formControlEmail0"
+                                                    >Enter your email</label
+                                                >
+                                            </div>
+                                            <a
+                                                href="#!"
+                                                type="button"
+                                                class="btn btn-outline-white btn-lg ms-md-2 px-5"
+                                                >Subscribe</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Section: Design Block -->
+
+                        <!-- Section: Design Block -->
+                    </section>
+                    <!-- Section: Content -->
+                </div>
+            </main>
+
+            <script
+                type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+            ></script>
+
+            <!-- Three.js core -->
+            <script
+                type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+            ></script>
+            <!-- Three.js setup -->
+            <script type="text/javascript">
+                // Texture
+                const textureLoader = new THREE.TextureLoader();
+                const normalTexture = textureLoader.load("/img/map.png");
+
+                // Canvas
+                const canvas = document.querySelector("canvas.webgl");
+
+                // Scene
+                const scene = new THREE.Scene();
+
+                // Objects
+                const geometry = new THREE.SphereBufferGeometry(0.5, 65, 65);
+
+                // Materials
+                const material = new THREE.MeshStandardMaterial();
+                material.normalMap = normalTexture;
+
+                // Mesh
+                const shape = new THREE.Mesh(geometry, material);
+                scene.add(shape);
+
+                // Lights
+                const pointLight = new THREE.PointLight(0x11223c, 1);
+                pointLight.position.x = 2;
+                pointLight.position.y = 3;
+                pointLight.position.z = 4;
+                scene.add(pointLight);
+
+                /**
+                 * Sizes
+                 */
+                const sizes = {
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                };
+
+                window.addEventListener("resize", () => {
+                    // Update sizes
+                    sizes.width = window.innerWidth;
+                    sizes.height = window.innerHeight;
+
+                    // Update camera
+                    camera.aspect = sizes.width / sizes.height;
+                    camera.updateProjectionMatrix();
+
+                    // Update renderer
+                    renderer.setSize(sizes.width, sizes.height);
+                    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                });
+
+                /**
+                 * Camera
+                 */
+                // Base camera
+                const camera = new THREE.PerspectiveCamera(
+                    75,
+                    sizes.width / sizes.height,
+                    0.1,
+                    100
+                );
+                camera.position.x = 0;
+                camera.position.y = 0;
+                camera.position.z = 2;
+                scene.add(camera);
+
+                /**
+                 * Renderer
+                 */
+                const renderer = new THREE.WebGLRenderer({
+                    canvas: canvas,
+                });
+                renderer.setSize(sizes.width, sizes.height);
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+                /**
+                 * Animate
+                 */
+                document.addEventListener("mousemove", onDocumentMouseMove);
+                let mouseX = 0;
+                let mouseY = 0;
+                let targetX = 0;
+                let targetY = 0;
+                const windowX = window.innerWidth / 2;
+                const windowY = window.innerHeight / 2;
+                function onDocumentMouseMove(event) {
+                    mouseX = event.clientX - windowX;
+                    mouseY = event.clientY - windowY;
+                }
+                const updateShape = (event) => {
+                    shape.position.y = window.scrollY * 0.001;
+                };
+
+                window.addEventListener("scroll", updateShape);
+
+                const clock = new THREE.Clock();
+
+                const tick = () => {
+                    targetX = mouseX * 0.001;
+                    targetY = mouseY * 0.001;
+
+                    const elapsedTime = clock.getElapsedTime();
+
+                    // Update objects
+                    shape.rotation.y = 0.5 * elapsedTime;
+
+                    shape.rotation.y += 0.5 * (targetX - shape.rotation.y);
+                    shape.rotation.x += 0.5 * (targetY - shape.rotation.x);
+
+                    // Update Orbital Controls
+                    // controls.update()
+
+                    // Render
+                    renderer.render(scene, camera);
+
+                    // Call tick again on the next frame
+                    window.requestAnimationFrame(tick);
+                };
+
+                tick();
+            </script>
+        </html>
+
+        <!-- MDB -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Custom scripts -->
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
